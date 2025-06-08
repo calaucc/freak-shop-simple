@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREAK SHOP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sistema.js"></script>
+</head>
+<body>
+    <div id="tienda">
+        <h1 class="titulo-animado">FREAK SHOP</h1>
+
+        <div id="carrito">
+            <h2>Total de la compra: $<span id="total-compra">0</span></h2>
+            <button onclick="irAPagar()">FINALIZAR COMPRA</button>
+        </div>
+
+        <div class="contenedor-albums">
+            <div class="card-album">
+                <img src="img/hybrid-theory.png" alt="Portada Hybrid Theory">
+                <h3>Hybrid Theory (2000)</h3>
+                <p>El debut de Linkin Park que redefinió el nu-metal para una nueva generación</p>
+                
+                <div class="lista-canciones">
+                    <h4>Canciones incluidas:</h4>
+                    <ol>
+                        <li>Papercut</li>
+                        <li>One Step Closer</li>
+                        <li>With You</li>
+                        <li>Points of Authority</li>
+                        <li>Crawling</li>
+                        <li>Runaway</li>
+                        <li>By Myself</li>
+                        <li>In the End</li>
+                        <li>A Place for My Head</li>
+                        <li>Forgotten</li>
+                        <li>Cure for the Itch</li>
+                        <li>Pushing Me Away</li>
+                    </ol>
+                </div>
+                
+                <p class="precio">$1500</p>
+                <button class="boton-preview" onclick="reproducirPreview('in-the-end.m4a', this)">Preview: In the End</button>
+                <label class="checkbox-container">
+                    Añadir al carrito
+                    <input type="checkbox" class="album-checkbox" value="1500" onchange="actualizarTotal()">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="card-album">
+                <img src="img/toxicity.jpg" alt="Portada Toxicity">
+                <h3>Toxicity (2001)</h3>
+                <p>La obra maestra de SOAD, un torbellino de caos melódico y crítica social</p>
+                
+                <div class="lista-canciones">
+                    <h4>Canciones incluidas:</h4>
+                    <ol>
+                        <li>Prison Song</li>
+                        <li>Needles</li>
+                        <li>Deer Dance</li>
+                        <li>Jet Pilot</li>
+                        <li>X</li>
+                        <li>Chop Suey!</li>
+                        <li>Bounce</li>
+                        <li>Forest</li>
+                        <li>ATWA</li>
+                        <li>Science</li>
+                        <li>Shimmy</li>
+                        <li>Toxicity</li>
+                        <li>Psycho</li>
+                        <li>Aerials</li>
+                    </ol>
+                </div>
+
+                <p class="precio">$1800</p>
+                <button class="boton-preview" onclick="reproducirPreview('chop-suey.m4a', this)">Preview: Chop Suey!</button>
+                <label class="checkbox-container">
+                    Añadir al carrito
+                    <input type="checkbox" class="album-checkbox" value="1800" onchange="actualizarTotal()">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="card-album">
+                <img src="img/follow-the-leader.jpg" alt="Portada Follow the Leader">
+                <h3>Follow the Leader (1998)</h3>
+                <p>El álbum que consolidó a Korn como los reyes indiscutibles del nu-metal</p>
+                
+                <div class="lista-canciones">
+                    <h4>Canciones incluidas:</h4>
+                    <ol>
+                        <li>It's On!</li>
+                        <li>Freak on a Leash</li>
+                        <li>Got the Life</li>
+                        <li>Dead Bodies Everywhere</li>
+                        <li>Children of the Korn</li>
+                        <li>B.B.K.</li>
+                        <li>Pretty</li>
+                        <li>All in the Family</li>
+                        <li>Reclaim My Place</li>
+                        <li>Justin</li>
+                        <li>Seed</li>
+                        <li>Cameltosis</li>
+                        <li>My Gift to You</li>
+                    </ol>
+                </div>
+                
+                <p class="precio">$1300</p>
+                <button class="boton-preview" onclick="reproducirPreview('freak-on-a-leash.m4a', this)">Preview: Freak on a Leash</button>
+                <label class="checkbox-container">
+                    Añadir al carrito
+                    <input type="checkbox" class="album-checkbox" value="1300" onchange="actualizarTotal()">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="card-album">
+                <img src="img/chocolate-starfish.webp" alt="Portada Chocolate Starfish">
+                <h3>Chocolate Starfish (2000)</h3>
+                <p>El himno de una generación de la mano de Limp Bizkit, pura energía y actitud</p>
+                
+                <div class="lista-canciones">
+                    <h4>Canciones incluidas:</h4>
+                    <ol>
+                        <li>Intro</li>
+                        <li>Hot Dog</li>
+                        <li>My Generation</li>
+                        <li>Full Nelson</li>
+                        <li>My Way</li>
+                        <li>Rollin' (Air Raid Vehicle)</li>
+                        <li>Livin' It Up</li>
+                        <li>The One</li>
+                        <li>Getcha Groove On</li>
+                        <li>Take a Look Around</li>
+                        <li>It'll Be OK</li>
+                        <li>Boiler</li>
+                        <li>Hold On</li>
+                        <li>Outro</li>
+                    </ol>
+                </div>
+                
+                <p class="precio">$1600</p>
+                <button class="boton-preview" onclick="reproducirPreview('rollin.m4a', this)">Preview: Rollin'</button>
+                <label class="checkbox-container">
+                    Añadir al carrito
+                    <input type="checkbox" class="album-checkbox" value="1600" onchange="actualizarTotal()">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div id="seccion-pago" style="display: none;">
+        <h1 class="titulo-animado">DATOS DE ENVÍO</h1>
+        <form>
+            <fieldset>
+                <legend>Información personal</legend>
+                <p>Nombre completo: <input id="nombre" name="nombre" class="input-form" type="text" placeholder="Tu nombre y apellido"></p>
+                <p>Email: <input id="email" name="email" class="input-form" type="email" placeholder="tu.correo@ejemplo.com"></p>
+                <p>Dirección de envío: <textarea id="direccion" name="direccion" cols="30" rows="4" placeholder="Calle, número, ciudad..."></textarea></p>
+                <p>Teléfono: <input id="telefono" name="telefono" class="input-form" type="number" placeholder="Sin el 0 y sin el 15"></p>
+                
+                <p>Género:</p>
+                <p><label>Masculino <input type="radio" name="genero" value="Masculino"></label></p>
+                <p><label>Femenino <input type="radio" name="genero" value="Femenino"></label></p>
+                <p><label>Otro <input type="radio" name="genero" value="Otro"></label></p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Información de pago</legend>
+                <label>Método de pago:</label>
+                <select name="metodo-pago" id="metodo-pago">
+                    <option value="credito">Tarjeta de crédito</option>
+                    <option value="debito">Tarjeta de débito</option>
+                    <option value="mercadopago">MercadoPago</option>
+                </select>
+
+                <p>¿Deseas recibir notificaciones de ofertas?</p>
+                <p><label>Sí, por Email <input type="checkbox" name="notificaciones" value="email"></label></p>
+                <p><label>Sí, por SMS <input type="checkbox" name="notificaciones" value="sms"></label></p>
+            </fieldset>
+
+            <button type="button" onclick="confirmarCompra()">CONFIRMAR PEDIDO</button>
+        </form>
+    </div>
+
+    <div id="control-audio">
+        <p id="cancion-actual">Ninguna canción seleccionada</p>
+        <button id="boton-pausa" onclick="controlarReproduccion()">▶</button>
+    </div>
+
+    <audio id="reproductor-audio"></audio>
+</body>
+</html>
